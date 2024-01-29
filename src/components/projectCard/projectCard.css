@@ -1,0 +1,8 @@
+.tamaño{
+    width: 35%; /* Puedes ajustar el valor según tus necesidades */
+    height: auto; /* Mantener la proporción original de la imagen */
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    
+}
