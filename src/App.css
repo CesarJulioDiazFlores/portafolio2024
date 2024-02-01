@@ -14,7 +14,10 @@
   min-height: 100px;
 }
 .color-body{
-  background-color: #282c34;
+  background-image: url(./statics/imagenes/gratisography-stairs-abstract-free-stock-photo.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
 }
 
 .App {

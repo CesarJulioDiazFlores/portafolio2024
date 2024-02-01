@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/header'; 
-import ProjectCard from './components/projectCard/projectCard';
+// import ProjectCard from './components/projectCard/projectCard';
 import About from './components/about/about';
 import CertificadoCard from './components/certicadoCard/certificadoCard';
 import Contacto from './components/contacto/contacto';
+import Carrusel from './components/projectCard/carrusel'
 function App() {
   return (
     <>
@@ -19,7 +20,7 @@ function App() {
     </div>
     <div className="elemento-otro" >
       
-      <ProjectCard/>
+      <Carrusel/>
     </div>
     <div>
     <CertificadoCard />
