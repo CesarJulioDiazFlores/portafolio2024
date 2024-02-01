@@ -1,6 +1,21 @@
+.ubicaciones{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas con igual ancho */
+  height: 100vh; /* Ocupa toda la altura del viewport */
+  
+}
+
+
+.color-footer,.App{
+  background-color: #A9D9C2;
+}
+.color-body{
+  background-color: #0D695A;
+}
+
 .App {
   text-align: center;
-  background-color: black;
+ 
 }
 
 .App-logo {

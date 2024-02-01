@@ -8,13 +8,34 @@ import Contacto from './components/contacto/contacto';
 function App() {
   return (
     <>
-    <div className="App">
+    <header className="App">
       <Header />
-      <ProjectCard/>
-      <CertificadoCard />
-      <Contacto/>
+
+    </header>
+    <body className="color-body ubicaciones" >
+    <div className="elemento-esquina"  >
+      
       <About/>
     </div>
+    <div className="elemento-otro" >
+      
+      <ProjectCard/>
+    </div>
+    <div>
+    <CertificadoCard />
+
+    </div>
+    
+
+
+    </body>
+      
+    <footer className="color-footer">
+      <Contacto/>
+    
+    
+    </footer>
+
     </>
   );
 }

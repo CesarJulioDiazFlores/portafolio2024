@@ -1,0 +1,22 @@
+.parrafo{
+    font-size: 10px;
+    color: aliceblue;
+}
+.about{
+    padding: 50px;
+    margin: 0;
+}
+
+.texto{
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: aliceblue;
+   
+}
+
+
+.iconos{
+    max-width: 70%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
