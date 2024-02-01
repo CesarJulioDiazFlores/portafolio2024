@@ -1,16 +1,20 @@
 .ubicaciones{
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas con igual ancho */
+  grid-template-columns: 35% 45%; /* Dos columnas con igual ancho */
+  justify-content: space-between;
   height: 100vh; /* Ocupa toda la altura del viewport */
   
 }
 
 
 .color-footer,.App{
-  background-color: #A9D9C2;
+  background-image: url(./statics/imagenes/gratisography-circuit-chip-02-free-stock-photo.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
 }
 .color-body{
-  background-color: #0D695A;
+  background-color: #282c34;
 }
 
 .App {
