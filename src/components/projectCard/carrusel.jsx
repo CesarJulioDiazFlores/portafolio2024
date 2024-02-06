@@ -1,17 +1,10 @@
 import React from 'react';
 import './projectCard.css';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
 import Card from '@mui/material/Card';
 import { styled } from '@mui/material/styles';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import ProjectCard from './projectCard'
+import ProjectCard from './projectCard';
+import { Grid } from '@mui/material';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -25,37 +18,71 @@ const ExpandMore = styled((props) => {
 }));
 
 export const Carrusel = () => {
+  const proyectosObj =[
+      {
+        nombre: "Bienes raices",
+        video: "https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2019/04/low-fidelity-wireframes-sketching-UI-kit.png.webp",
+        git: "",
+        link:"",
+        tecnologias: "php, html, scss, gulp, sql",
+
+      },
+      {
+        nombre: "proyectos 2 ",
+        video: "https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2019/04/low-fidelity-wireframes-sketching-UI-kit.png.webp",
+        git: "",
+        link:"",
+        tecnologias: "",
+        
+      },
+      {
+        nombre: "proyectos 3 ",
+        video: "https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2019/04/low-fidelity-wireframes-sketching-UI-kit.png.webp",
+        git: "",
+        link:"",
+        tecnologias: "",
+        
+      }
+  ];
+
   const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
   };
   return (
+    <Grid item xs={6.5} sx={{marginBottom: "70px"}} >
 
-<Card sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)',  borderRadius: "30px", marginRight:"50px", marginTop:"80px", marginLeft:"-60px"}} >
+<Card sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)',  borderRadius: "30px"}} >
 <div id="carouselExampleDark" className="carousel carousel-dark slide tamaño ">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <div className="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner">
-    < ProjectCard/>
-    < ProjectCard/>
-    < ProjectCard/>
+  <div className="carousel-inner">
+    {
+      proyectosObj.map((project) => (
+        < ProjectCard proyecto={project}/>
+      
+       ) )
+    }
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
   </button>
 </div>
 </Card>
+    </Grid>
+
   )
 }
+
 
 
 export default Carrusel

@@ -11,6 +11,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const ExpandMore = styled((props) => {
+  
   const { expand, ...other } = props;
   return <IconButton {...other} />;
 })(({ theme, expand }) => ({
@@ -21,19 +22,22 @@ const ExpandMore = styled((props) => {
   })
 }));
 
-export const ProjectCard = () => {
+export const ProjectCard = ( { proyecto } ) => {
+  const {nombre,video,git,link,tecnologia} = proyecto;
   const [expanded, setExpanded] = React.useState(false);
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-  };
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  }; 
+
   return (
-    <div class="carousel-item  active" data-bs-interval="10000">
-    <img  className=""src="https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2019/04/low-fidelity-wireframes-sketching-UI-kit.png.webp " class="d-block w-100" alt="..."/>
-    <div class="carousel-caption d-none d-md-block">
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-propio"><GitHubIcon/></button>
-        <button type="button" class="btn btn-propio"><DesktopWindowsOutlinedIcon/></button>
+    <div className="carousel-item  active" data-bs-interval="10000">
+    <img src={video} className="d-block w-100" alt=""/>
+    <div className="carousel-caption d-none d-md-block">
+      <div className="btn-group" role="group" aria-label="Basic example">
+        {/* <button ></button> */}
+        <a href={git} type="button" className="btn btn-propio" ><GitHubIcon/></a>
+        <a href={link} type="button" className="btn btn-propio"><DesktopWindowsOutlinedIcon/></a>
           <CardActions disableSpacing>
               <IconButton onClick={handleExpandClick} aria-expanded={expanded} aria-label="show more">
                   <ExpandMoreIcon />
@@ -41,7 +45,7 @@ export const ProjectCard = () => {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
-                  <Typography paragraph>Bienes raices</Typography>
+                  <Typography paragraph>'{nombre}{tecnologia}'  </Typography>
               </CardContent>
           </Collapse>
       </div>

@@ -1,6 +1,10 @@
 .header {
+    background-image: url(../../statics/imagenes/gratisography-circuit-chip-02-free-stock-photo.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100px;
     display: flex;
-    justify-content: flex-end; /* Alinea los elementos hacia la derecha */
+    justify-content: space-between; /* Alinea los elementos hacia la derecha */
     align-items: center;
     padding: 20px;
    
@@ -8,4 +12,9 @@
 .iconos {
     margin-right: 10px;
     color: white;
+}
+.tex3{
+    font-family: 'Bebas Neue', sans-serif;
+    
+    color: #230786;
 }

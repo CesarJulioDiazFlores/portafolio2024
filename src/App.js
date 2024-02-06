@@ -5,38 +5,32 @@ import Header from './components/header/header';
 import About from './components/about/about';
 import CertificadoCard from './components/certicadoCard/certificadoCard';
 import Contacto from './components/contacto/contacto';
-import Carrusel from './components/projectCard/carrusel'
+import Carrusel from './components/projectCard/carrusel';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 function App() {
   return (
     <>
-    <header className="App">
+    
+    <Box className="color-body" sx={{ flexGrow: 1, pb: 50 }}>
+    <header className="">
       <Header />
 
     </header>
-    <body className="color-body ubicaciones" >
-    <div className="elemento-esquina"  >
-      
-      <About/>
-    </div>
-    <div className="elemento-otro" >
-      
+    <Grid container spacing={6} sx={{ maxWidth: '95%', margin: '5%' }} >
+      <About />
       <Carrusel/>
-    </div>
-    <div>
-    <CertificadoCard />
-
-    </div>
-    
-
-
-    </body>
-      
-    <footer className="color-footer">
+      <CertificadoCard />
       <Contacto/>
     
+     
     
-    </footer>
-
+    
+    </Grid>
+   
+   
+    
+    </Box>
     </>
   );
 }

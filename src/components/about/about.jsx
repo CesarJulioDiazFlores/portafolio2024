@@ -1,8 +1,11 @@
+import { Grid } from '@mui/material';
 import './about.css';
 import Card from '@mui/material/Card';
 
 const about = () => {
   return (
+    <Grid item xs={5}>
+
     <Card sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)',  borderRadius: "30px"}} className='card'>
 
     <div className="about">
@@ -25,6 +28,8 @@ const about = () => {
     </div>
       
     </Card>
+    </Grid>
+
   )
 }
 
