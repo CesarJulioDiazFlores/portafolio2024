@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
-import logo from "../../statics/imagenes/logo.jpg"
+import logo from "../../statics/imagenes/cesar-julio-diaz-flores-high-resolution-logo-white.png"
 
 export const Header = () => {
 

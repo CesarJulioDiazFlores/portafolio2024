@@ -17,9 +17,13 @@ function App() {
       <Header />
 
     </header>
-    <Grid container spacing={6} sx={{ maxWidth: '95%', margin: '5%' }} >
-      <About />
-      <Carrusel/>
+    <Grid container spacing={6} sx={{ maxWidth: '95%',paddingTop: "250px"}} >
+      <div className="cursos-container">
+        <div className="curso"><About /></div>
+      <div className="curso"> <Carrusel/></div>
+     
+
+      </div>
       <CertificadoCard />
       <Contacto/>
     

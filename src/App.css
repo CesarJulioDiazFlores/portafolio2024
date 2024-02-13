@@ -13,4 +13,24 @@
   background-size: cover;
   min-height: 100px;
 }
+.cursos-container{
+  display: flex;
+ 
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 
+}
+.curso{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+.cursos-container{
+  display: flex;
+ 
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}

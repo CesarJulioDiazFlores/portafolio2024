@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import ProjectCard from './projectCard';
 import { Grid } from '@mui/material';
 
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -51,38 +52,39 @@ export const Carrusel = () => {
         setExpanded(!expanded);
   };
   return (
-    <Grid item xs={6.5} sx={{marginBottom: "70px"}} >
+    // <div className="curso">
+          <Card sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)',  borderRadius: "30px"}} >
+          <div id="carouselExampleDark" className="carousel carousel-dark slide tamaño ">
+            <div className="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div className="carousel-inner">
+              {
+                proyectosObj.map((project) => (
+                  < ProjectCard proyecto={project}/>
+                
+                ) )
+              }
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+          </Card>
 
-<Card sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)',  borderRadius: "30px"}} >
-<div id="carouselExampleDark" className="carousel carousel-dark slide tamaño ">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-    {
-      proyectosObj.map((project) => (
-        < ProjectCard proyecto={project}/>
-      
-       ) )
-    }
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-</Card>
-    </Grid>
+    // </div>
+
+ 
 
   )
 }
-
 
 
 export default Carrusel

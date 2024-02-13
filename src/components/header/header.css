@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 70px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,7 +19,7 @@
 }
 
 .content {
-    margin-top: 100px; /* altura del header, ajusta según sea necesario */
+    margin-top: 80px; /* altura del header, ajusta según sea necesario */
     /* Agrega estilos adicionales si es necesario */
 }
 .iconos {
@@ -32,6 +32,12 @@
     color: #230786;
 }
 .logo{
-    height: 15vh;
-    border-radius: 10px;
+    height: 10vh;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Escalamos ligeramente el logo cuando el cursor está sobre él */
 }
