@@ -1,6 +1,6 @@
 
 .parrafo{
-    font-size: 10px;
+    font-size: 13px;
     color: black;
 }
 .about{
@@ -28,3 +28,8 @@
     margin-bottom: 0;
 }
 
+.about-container{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}

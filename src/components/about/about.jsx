@@ -4,9 +4,8 @@ import Card from '@mui/material/Card';
 
 const about = () => {
   return (
-    // <Grid item xs={5}>
-
-    <Card sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)',  borderRadius: "30px"}} className='card'>
+    <div className='about-container'>
+    <Card sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)',  borderRadius: "30px", maxHeight: "300px"}}>
  
         <div className="about">
             <h1 className="texto"> Cesar Julio <span className="t2">Diaz flores</span> </h1>
@@ -28,7 +27,7 @@ const about = () => {
   
       
     </Card>
-    // </Grid>
+    </div>
 
   )
 }

@@ -52,7 +52,7 @@ export const Carrusel = () => {
         setExpanded(!expanded);
   };
   return (
-    // <div className="curso">
+    <div className="carrusel-container">
           <Card sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)',  borderRadius: "30px"}} >
           <div id="carouselExampleDark" className="carousel carousel-dark slide tamaño ">
             <div className="carousel-indicators">
@@ -79,7 +79,7 @@ export const Carrusel = () => {
           </div>
           </Card>
 
-    // </div>
+     </div>
 
  
 

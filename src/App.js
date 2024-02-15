@@ -12,17 +12,15 @@ function App() {
   return (
     <>
     
-    <Box className="color-body" sx={{ flexGrow: 1, pb: 50 }}>
+    <Box className="color-body" sx={{}}>
     <header className="">
       <Header />
 
     </header>
-    <Grid container spacing={6} sx={{ maxWidth: '95%',paddingTop: "250px"}} >
-      <div className="cursos-container">
-        <div className="curso"><About /></div>
-      <div className="curso"> <Carrusel/></div>
-     
-
+    <div style={{ width: '100%',paddingTop: "250px"}} >
+      <div className="app-container">
+        <div className="app-about-carrusel"><About /></div>
+        <div className="app-about-carrusel"> <Carrusel/></div>
       </div>
       <CertificadoCard />
       <Contacto/>
@@ -30,7 +28,7 @@ function App() {
      
     
     
-    </Grid>
+    </div>
    
    
     

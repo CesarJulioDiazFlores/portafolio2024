@@ -5,7 +5,12 @@
     
     
 }
+
 .btn-propio{
     background-color:  #bfbfbf;
     
+}
+
+.carrusel-container{
+    max-width: 600px;
 }
