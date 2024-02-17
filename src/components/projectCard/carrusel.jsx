@@ -5,7 +5,9 @@ import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ProjectCard from './projectCard';
 import { Grid } from '@mui/material';
-
+import bienesraices from "../../statics/imagenes/bienesraices-imagen.png"
+import festival from "../../statics/imagenes/festival-imagen.png"
+import blogcafe from "../../statics/imagenes/blogcafe.png"
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -22,7 +24,7 @@ export const Carrusel = () => {
   const proyectosObj =[
       {
         nombre: "Bienes raices",
-        video: "https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2019/04/low-fidelity-wireframes-sketching-UI-kit.png.webp",
+        video: bienesraices,
         git: "",
         link:"",
         tecnologias: "php, html, scss, gulp, sql",
@@ -30,7 +32,7 @@ export const Carrusel = () => {
       },
       {
         nombre: "proyectos 2 ",
-        video: "https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2019/04/low-fidelity-wireframes-sketching-UI-kit.png.webp",
+        video: festival,
         git: "",
         link:"",
         tecnologias: "",
@@ -38,9 +40,9 @@ export const Carrusel = () => {
       },
       {
         nombre: "proyectos 3 ",
-        video: "https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2019/04/low-fidelity-wireframes-sketching-UI-kit.png.webp",
-        git: "",
-        link:"",
+        video: blogcafe,
+        git: "https://github.com/CesarJulioDiazFlores/blogdecafe",
+        link:"https://cesarjuliodiazflores.github.io/blogdecafe/",
         tecnologias: "",
         
       }

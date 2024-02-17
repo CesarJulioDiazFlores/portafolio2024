@@ -8,40 +8,44 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { Grid } from '@mui/material';
 import mono from "../../statics/imagenes/gratisography-dj-gorilla-free-stock-photo.jpg"
-import neon from "../../statics/imagenes//gratisography-neon-lightbulb-free-stock-photo.jpg"
+import python from "../../statics/imagenes/certificadopython.png"
 
 export default function MultiActionAreaCard() {
   return (
     <div className="cursos-container">
       <div className="curso">
-      <Card sx={{ maxWidth: 500,backgroundColor: 'rgba(255, 255, 255, 0.6)'}}>
+      <Card sx={{ maxWidth: 600 ,backgroundColor: 'rgba(255, 255, 255, 0.6)'}}>
         <CardActionArea>
           <CardMedia
             component="img"
             height="140"
-            image={neon}
+            image={python}
             alt="green iguana" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               Lizard
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
+            Contenido:
+            -SQL
+            -PYTHON
+            -DJANGO
+            -GIT HUB
+            Duracion:
+            3 meses
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Descargar
-          </Button>
+              <button class="learn-more"> descargar
+            </button>
         </CardActions>
       </Card>
 
       </div>
 
       <div className="curso">
-        <Card sx={{ maxWidth: 500,backgroundColor: 'rgba(255, 255, 255, 0.6)' }}>
+        <Card sx={{ maxWidth: 600,backgroundColor: 'rgba(255, 255, 255, 0.6)' }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -53,15 +57,19 @@ export default function MultiActionAreaCard() {
                 Lizard
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+              Contenido:
+              -SQL
+              -PYTHON
+              -DJANGO
+              -GIT HUB
+              Duracion:
+              3 meses
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
-              Descargar
-            </Button>
+            <button class="learn-more"> descargar
+            </button>
           </CardActions>
         </Card>
 
