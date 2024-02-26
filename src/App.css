@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.color-footer,.App{
+  background-image: url(./statics/imagenes/gratisography-circuit-chip-02-free-stock-photo.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
+}
+.color-body{
+  background-image: url(./statics/imagenes/gratisography-stairs-abstract-free-stock-photo.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 100px;
+  padding-bottom: 60px;
+}
+.app-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.app-about-carrusel{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

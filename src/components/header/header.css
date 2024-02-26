@@ -1,0 +1,43 @@
+.header {
+    background-image: url(../../statics/imagenes/gratisography-circuit-chip-02-free-stock-photo.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    transition: top 0.3s;
+}
+.header.hide {
+    top: -100px; /* altura del header, ajusta según sea necesario */
+}
+
+.content {
+    margin-top: 80px; /* altura del header, ajusta según sea necesario */
+    /* Agrega estilos adicionales si es necesario */
+}
+.iconos {
+    margin-right: 10px;
+    color: white;
+}
+.tex3{
+    font-family: 'Bebas Neue', sans-serif;
+
+    color: #230786;
+}
+.logo{
+    height: 10vh;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Escalamos ligeramente el logo cuando el cursor está sobre él */
+}
